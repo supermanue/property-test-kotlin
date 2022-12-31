@@ -2,7 +2,6 @@ package com.newrelic.propertytesttutorial.lib
 
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
-import org.junit.jupiter.api.assertThrows
 
 class MathOpsTest : StringSpec({
 
@@ -25,7 +24,7 @@ class MathOpsTest : StringSpec({
 
     "smallerInt has an uncovered edge case" {
         val a = Int.MIN_VALUE
-        ( MathOps.smallerInt(a) < a) shouldBe true
+        (MathOps.smallerInt(a) < a) shouldBe true
     }
 
 })
